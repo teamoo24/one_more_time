@@ -1,0 +1,14 @@
+{
+  "name": "daruma",
+  "version": "1.0.0",
+  "description": "daruma game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "han",
+  "license": "ME",
+  "dependencies": {
+    "give-me-a-joke": "^0.3.2"
+  }
+}
