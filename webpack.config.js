@@ -4,7 +4,7 @@ module.exports = (env, argv) => {
 	return {
 		mode: 'production',
 		entry: {
-			index : path.join(__dirname, 'index.ts'),
+			index : path.join(__dirname, 'src' ,'index.ts'),
 		},
 
 		output: {
@@ -13,7 +13,12 @@ module.exports = (env, argv) => {
       		library: 'test_npm',
       		libraryTarget: 'umd'
     	},
-
+    	resolve: {
+    		extensions: ['.ts', '.js'],
+    		modules: [
+    			"node_modules"
+    		]
+    	},
 		module: {
 			rules: [
 				{

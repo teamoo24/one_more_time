@@ -1,7 +1,10 @@
-import sum from './deps'
+import * as PIXI from "pixi.js"
 
-const n = 1;
-const s = 2;
+window.onload = () => {
+	const app = new PIXI.Application({width: 400, height: 200});
+	document.body.append(app.view);
 
-const result = sum(n, s);
-console.log(result)
+	const text = new PIXI.Text("src Hello World!");
+	text.style.fill = '#ffffff';
+	app.stage.addChild(text);
+}
