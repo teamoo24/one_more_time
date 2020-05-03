@@ -4,11 +4,23 @@
   "description": "one_more_time",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc -p .",
+    "tslint": "tslint -p .",
+    "typedoc": "typedoc -p .",
+    "webpack": "webpack",
+    "server":"webpack-dev-server"
   },
   "author": "han",
   "license": "ME",
-  "dependencies": {
-    "give-me-a-joke": "^0.3.2"
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^7.0.2",
+    "tslint": "^6.1.2",
+    "tslint-config-airbnb": "^5.11.2",
+    "typedoc": "^0.17.6",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
